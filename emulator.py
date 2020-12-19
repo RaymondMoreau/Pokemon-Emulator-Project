@@ -90,9 +90,19 @@ class Pokemon:
 
     def takedamage(self, damage):
         """(Pokemon, int) --> None
-        Pokemon 1, or self, takes damage."""
+        Pokemon, or self, takes damage."""
 
         self.hp -= damage
+
+        pass
+
+    def gainhealth(self, healing):
+        """(Pokemon, int) -->
+        Pokemon, or self, heals health."""
+
+        self.hp += healing
+
+        pass
 
 
 ###########################################################################################
@@ -115,3 +125,13 @@ while shakila.hp > 0:
     print(shakila)
 
 print("Congrats! You knocked out Shakila!")
+
+while shakila.hp < 1:
+
+    healing = int(input("How hard do you want to heal Shakila?"))
+
+    shakila.gainhealth(healing)
+
+    print(shakila)
+
+print("Boo. You saved Shakila.")
