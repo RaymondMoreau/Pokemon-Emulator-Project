@@ -12,3 +12,5 @@ Learn more about using GitHub as a method of co-ordinating with others in a codi
 
 Improve collaboration skills and decision making when working in a group
 
+
+Discontinued as of 02/02/21 due to Ashton not making a single contribution and that we are learning Java, which will be a better object-oriented language for this project.

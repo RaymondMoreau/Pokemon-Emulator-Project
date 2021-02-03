@@ -139,6 +139,8 @@ while dummy.hp > 0: # battles until dummy is 'dead'
 
     print("Here's how much health the dummy has left: " + str(dummy.hp))
 
+    print("And " + poke.name + " has " + poke.hp + " left!\n")
+
     charge = charge + 1
 
     print("Let's attack the dummy! Here are your moves:")
@@ -152,7 +154,7 @@ while dummy.hp > 0: # battles until dummy is 'dead'
     check = True
 
     while check: # ensures input was a valid attack
-        if answer != type(int):
+        if type(answer) != int:
 
             print("That is not an number. Type in 1 or 2 to use a move!")
 
